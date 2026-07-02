@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <div class="icon"><i class="fa-solid fa-bars"></i></div>
+        <img
+          class="logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg"
+        />
+        <div class="icon"><i class="fa-regular fa-sun"></i></div>
+      </header>
+
+      <section class="controls">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i
+          ><input placeholder="Search for a Pokémon..." />
+        </div>
+        <div class="filters">
+          <button>
+            Filter by types (1) <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <div class="icon"><i class="fa-solid fa-filter"></i></div>
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="card grass">
+          <span>#0908</span>
+          <div class="fav"><i class="fa-regular fa-heart"></i></div>
+          <div class="fav-icon">
+            <i class="fa-solid fa-leaf fa-lg" style="color: #6eb466"></i>
+          </div>
+          <div class="bg-circle"></div>
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png"
+          />
+          <h2>Meowscarada</h2>
+          <div class="card-footer">
+            <p>
+              <span>
+                <i class="fa-solid fa-leaf fa-lg" style="color: #6eb466"></i>
+              </span>
+
+              GRASS
+            </p>
+
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card steel">
+          <span>#0624</span>
+          <div class="fav"><i class="fa-regular fa-heart"></i></div>
+          <div class="fav-icon">
+            <i class="fa-solid fa-gear fa-lg" style="color: #4f657b"></i>
+          </div>
+          <div class="bg-circle"></div>
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/624.png"
+          />
+          <h2>Pawniard</h2>
+          <div class="card-footer">
+            <p>
+              <span>
+                <i class="fa-solid fa-gear fa-lg" style="color: #4f657b"></i>
+              </span>
+
+              DARK / STEEL
+            </p>
+
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card fire">
+          <span>#0229</span>
+          <div class="fav"><i class="fa-regular fa-heart"></i></div>
+          <div class="fav-icon">
+            <i class="fa-solid fa-fire fa-lg" style="color: #e36846"></i>
+          </div>
+          <div class="bg-circle"></div>
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/229.png"
+          />
+          <h2>Houndoom</h2>
+          <div class="card-footer">
+            <p>
+              <span>
+                <i class="fa-solid fa-fire fa-lg" style="color: #e36846"></i>
+              </span>
+
+              DARK / FIRE
+            </p>
+
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card water">
+          <span>#0686</span>
+          <div class="fav"><i class="fa-regular fa-heart"></i></div>
+          <div class="fav-icon">
+            <i class="fa-solid fa-droplet fa-lg" style="color: #407fe9"></i>
+          </div>
+          <div class="bg-circle"></div>
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/686.png"
+          />
+          <h2>Inkay</h2>
+          <div class="card-footer">
+            <p>
+              <span>
+                <i class="fa-solid fa-droplet fa-lg" style="color: #407fe9"></i>
+              </span>
+
+              DARK / PSYCHIC
+            </p>
+
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom">
+        <div class="bottom-item">
+          <div class="circle" id="explore">
+            <i class="fa-solid fa-compass" style="color: #5a6cff"></i>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <p>Discover your <br />favorite Pokémon</p>
+          </div>
+        </div>
+        <div class="bottom-item">
+          <div class="circle" id="filter">
+            <i class="fa-solid fa-leaf fa-lg" style="color: #6eb466"></i>
+          </div>
+          <div>
+            <h3>Filter</h3>
+            <p>Find Pokémon by <br />types and abilites</p>
+          </div>
+        </div>
+        <div class="bottom-item">
+          <div class="circle" id="collection">
+            <i class="fa-solid fa-star fa-lg" style="color: #f3b831"></i>
+          </div>
+          <div>
+            <h3>Collection</h3>
+            <p>Save and manage <br />your collection</p>
+          </div>
+        </div>
+        <div class="bottom-item">
+          <div class="circle" id="stats">
+            <i
+              class="fa-solid fa-chart-simple fa-lg"
+              style="color: #ac5ce3"
+            ></i>
+          </div>
+          <div>
+            <h3>Stats</h3>
+            <p>View stats and learn <br />about Pokémon</p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-ball">
+          <div class="top"></div>
+          <div class="middle"></div>
+          <div class="center"></div>
+        </div>
+
+        <p>© 2024 Pokémon. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
